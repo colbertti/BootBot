@@ -29,8 +29,8 @@ var qnaMakerTools = new cognitiveservices.QnAMakerTools();
 bot.library(qnaMakerTools.createLibrary());    
 
 var qnarecognizer = new cognitiveservices.QnAMakerRecognizer({
-                                                                knowledgeBaseId: 'eb1a0012-ae40-4878-a1ce-066e83613ee9',
-                                                                subscriptionKey: '7c1ed849f5e24f4caf50167453db8387'});
+                                                                knowledgeBaseId: 'YOUR KB',
+                                                                subscriptionKey: 'YOUR KEY'});
 //QNA dialog
 var basicQnAMakerDialog = new cognitiveservices.QnAMakerDialog({
     recognizers: [qnarecognizer],
